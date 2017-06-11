@@ -12,3 +12,19 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
+
+.container {
+   overflow: hidden;
+   background: grey;
+}
+
+.left {
+   float: left;
+   width: 400;
+   background: red;
+}
+
+.body {
+   margin-left: 400px;
+   background: green;
+}
