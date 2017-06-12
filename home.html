@@ -1,344 +1,370 @@
 <!DOCTYPE html>
 <html>
 <title>W3.CSS Template</title>
+
 <head>
-<!-- 1 Aumentar aqui -->
-<script type="text/javascript">
-        function move() {
-          var elem = document.getElementById("myBar");   
-          var width = 10;
-          var id = setInterval(frame, 10);
-          function frame() {
-            if (width >= 85) {
-              clearInterval(id);
-            } else {
-              width++; 
-              elem.style.width = width + '%'; 
-              elem.innerHTML = width * 1  + '%';
-            }
-          }
+  <!-- 1 Aumentar aqui -->
+  <script type="text/javascript">
+    function move() {
+      var elem = document.getElementById("myBar");
+      var width = 10;
+      var id = setInterval(frame, 10);
+      function frame() {
+        if (width >= 85) {
+          clearInterval(id);
+        } else {
+          width++;
+          elem.style.width = width + '%';
+          elem.innerHTML = width * 1 + '%';
         }
-        window.onload = move;
-</script>
-<!-- 1 Hasta aqui -->
+      }
+    }
+    window.onload = move;
+  </script>
+  <!-- 1 Hasta aqui -->
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- 2 KS Aumentar esto --> <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/><style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- 2 KS Aumentar esto -->
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
 
-html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-</style>
-
-<!-- Compiled and minified CSS -->
+  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
 
   <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
-  
-  </head>
+
+</head>
+
 <body class="w3-light-grey">
 
-<!-- Top container -->
-<div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
-  <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
-  <span class="w3-bar-item w3-right">Logo</span>
-</div>
-
-<!-- 3 KS Reamplazar esto aqui -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container w3-row">
-    <div class="w3-card-2 w3-round w3-white">
-      <div class="w3-container">         
-       <p class="w3-center"><img src="img/Donna.png" class="w3-circle userImage" alt="Avatar"></p>
-
-       <div class="w3-display-container">
-        <h5 style="padding-left: 30px;">Donna Black</h5>
-        <img class="w3-display-topright level"  src="img/level.png" alt="level" >
-        <span class="w3-display-topright level-number">5</span>
-        <span class="level-detail">Level</span>
-       </div>             
-       <div id="myProgress" class="progress-bar">
-        <div id="myBar">10%</div>
-       </div>
+  <!-- Top container -->
+  <div class="w3-bar w3-top w3-black w3-large" style="z-index:4">
+    <button class="w3-bar-item w3-button w3-hide-large w3-hover-none w3-hover-text-light-grey" onclick="w3_open();"><i class="fa fa-bars"></i>  Menu</button>
+    <span class="w3-bar-item w3-right">Logo</span>
   </div>
-  <hr>
-  <div class="w3-container">
-    <h5>Menu</h5>
-  </div>
-  <div class="w3-bar-block">
-    <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-    <a href="home.html" class="w3-bar-item w3-button w3-padding  w3-blue" ><i class="fa fa-home fa-fw"></i>  Home</a> <!-- 4 KS w3-blue REMOVER Y COLOCAR EN LA PAGINA SELECIONADA  -->
-    <a href="performance.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bar-chart fa-fw"></i>  Performance</a>
-    <a href="learning.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>  Learning</a>
-    <a href="agent-rewards.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Rewards</a>
-    <a href="social.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-thumbs-o-up fa-fw"></i>  Social</a> 
-    <a href="settings.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br>
-  </div>
-</nav>
-<!-- 3 Hasta aqui -->
 
+  <!-- 3 KS Reamplazar esto aqui -->
+  <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <div class="w3-container w3-row">
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+          <p class="w3-center"><img src="img/Donna.png" class="w3-circle userImage" alt="Avatar"></p>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:300px;margin-top:43px;">
-
-  <!-- Header -->
-  <header class="w3-container" style="padding-top:22px">
-    <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
-  </header>
-
-  <div class="w3-row-padding w3-margin-bottom">
-    <div class="w3-quarter">
-      <div class="w3-container w3-red w3-padding-16">
-        <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>52</h3>
+          <div class="w3-display-container">
+            <h5 style="padding-left: 30px;">Donna Black</h5>
+            <img class="w3-display-topright level" src="img/level.png" alt="level">
+            <span class="w3-display-topright level-number">5</span>
+            <span class="level-detail">Level</span>
+          </div>
+          <div id="myProgress" class="progress-bar">
+            <div id="myBar">10%</div>
+          </div>
         </div>
-        <div class="w3-clear"></div>
-        <h4>Messages</h4>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <div class="w3-container w3-blue w3-padding-16">
-        <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>99</h3>
+        <hr>
+        <div class="w3-container">
+          <h5>Menu</h5>
         </div>
-        <div class="w3-clear"></div>
-        <h4>Views</h4>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <div class="w3-container w3-teal w3-padding-16">
-        <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>23</h3>
+        <div class="w3-bar-block">
+          <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+          <a href="home.html" class="w3-bar-item w3-button w3-padding  w3-blue"><i class="fa fa-home fa-fw"></i>  Home</a>
+          <!-- 4 KS w3-blue REMOVER Y COLOCAR EN LA PAGINA SELECIONADA  -->
+          <a href="performance.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bar-chart fa-fw"></i>  Performance</a>
+          <a href="learning.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>  Learning</a>
+          <a href="agent-rewards.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Rewards</a>
+          <a href="social.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-thumbs-o-up fa-fw"></i>  Social</a>
+          <a href="settings.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br>
         </div>
-        <div class="w3-clear"></div>
-        <h4>Shares</h4>
-      </div>
-    </div>
-    <div class="w3-quarter">
-      <div class="w3-container w3-orange w3-text-white w3-padding-16">
-        <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
-        <div class="w3-right">
-          <h3>50</h3>
+  </nav>
+  <!-- 3 Hasta aqui -->
+
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- !PAGE CONTENT! -->
+  <div class="w3-main" style="margin-left:300px;margin-top:43px;">
+
+    <!-- Header -->
+    <header class="w3-container" style="padding-top:22px">
+      <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
+    </header>
+
+    <div class="w3-row-padding w3-margin-bottom">
+      <div class="w3-quarter">
+        <div class="w3-container w3-red w3-padding-16">
+          <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
+          <div class="w3-right">
+            <h3>52</h3>
+          </div>
+          <div class="w3-clear"></div>
+          <h4>Messages</h4>
         </div>
-        <div class="w3-clear"></div>
-        <h4>Users</h4>
       </div>
-    </div>
-  </div>
-
-  <div class="progress">
-      <div class="indeterminate"></div>
-  </div>
-
-
-  <div class="w3-panel">
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-third">
-        <h5>Regions</h5>
-        <img src="/w3images/region.jpg" style="width:100%" alt="Google Regional Map">
+      <div class="w3-quarter">
+        <div class="w3-container w3-blue w3-padding-16">
+          <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
+          <div class="w3-right">
+            <h3>99</h3>
+          </div>
+          <div class="w3-clear"></div>
+          <h4>Views</h4>
+        </div>
       </div>
-      <div class="w3-twothird">
-        <h5>Feeds</h5>
-        <table class="w3-table w3-striped w3-white">
-          <tr>
-            <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
-            <td>New record, over 90 views.</td>
-            <td><i>10 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
-            <td>Database error.</td>
-            <td><i>15 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
-            <td>New record, over 40 users.</td>
-            <td><i>17 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
-            <td>New comments.</td>
-            <td><i>25 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
-            <td>Check transactions.</td>
-            <td><i>28 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
-            <td>CPU overload.</td>
-            <td><i>35 mins</i></td>
-          </tr>
-          <tr>
-            <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
-            <td>New shares.</td>
-            <td><i>39 mins</i></td>
-          </tr>
-        </table>
+      <div class="w3-quarter">
+        <div class="w3-container w3-teal w3-padding-16">
+          <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
+          <div class="w3-right">
+            <h3>23</h3>
+          </div>
+          <div class="w3-clear"></div>
+          <h4>Shares</h4>
+        </div>
       </div>
-    </div>
-  </div>
-  <hr>
-  <div class="w3-container">
-    <h5>General Stats</h5>
-    <p>New Visitors</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-center w3-padding w3-green" style="width:25%">+25%</div>
-    </div>
-
-    <p>New Users</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-center w3-padding w3-orange" style="width:50%">50%</div>
-    </div>
-
-    <p>Bounce Rate</p>
-    <div class="w3-grey">
-      <div class="w3-container w3-center w3-padding w3-red" style="width:75%">75%</div>
-    </div>
-  </div>
-  <hr>
-
-  <div class="w3-container">
-    <h5>Countries</h5>
-    <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
-      <tr>
-        <td>United States</td>
-        <td>65%</td>
-      </tr>
-      <tr>
-        <td>UK</td>
-        <td>15.7%</td>
-      </tr>
-      <tr>
-        <td>Russia</td>
-        <td>5.6%</td>
-      </tr>
-      <tr>
-        <td>Spain</td>
-        <td>2.1%</td>
-      </tr>
-      <tr>
-        <td>India</td>
-        <td>1.9%</td>
-      </tr>
-      <tr>
-        <td>France</td>
-        <td>1.5%</td>
-      </tr>
-    </table><br>
-    <button class="w3-button w3-dark-grey">More Countries  <i class="fa fa-arrow-right"></i></button>
-  </div>
-  <hr>
-  <div class="w3-container">
-    <h5>Recent Users</h5>
-    <ul class="w3-ul w3-card-4 w3-white">
-      <li class="w3-padding-16">
-        <img src="/w3images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
-        <span class="w3-xlarge">Mike</span><br>
-      </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
-        <span class="w3-xlarge">Jill</span><br>
-      </li>
-      <li class="w3-padding-16">
-        <img src="/w3images/avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
-        <span class="w3-xlarge">Jane</span><br>
-      </li>
-    </ul>
-  </div>
-  <hr>
-
-  <div class="w3-container">
-    <h5>Recent Comments</h5>
-    <div class="w3-row">
-      <div class="w3-col m2 text-center">
-        <img class="w3-circle" src="/w3images/avatar3.png" style="width:96px;height:96px">
-      </div>
-      <div class="w3-col m10 w3-container">
-        <h4>John <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
-        <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+      <div class="w3-quarter">
+        <div class="w3-container w3-orange w3-text-white w3-padding-16">
+          <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+          <div class="w3-right">
+            <h3>50</h3>
+          </div>
+          <div class="w3-clear"></div>
+          <h4>Users</h4>
+        </div>
       </div>
     </div>
 
-    <div class="w3-row">
-      <div class="w3-col m2 text-center">
-        <img class="w3-circle" src="/w3images/avatar1.png" style="width:96px;height:96px">
-      </div>
-      <div class="w3-col m10 w3-container">
-        <h4>Bo <span class="w3-opacity w3-medium">Sep 28, 2014, 10:15 PM</span></h4>
-        <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+
+
+
+    <div class="w3-panel">
+      <!--TOP TEN-->
+
+
+
+
+      <!--END TOP TEN-->
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-third" >
+          <h5><b><i class="fa fa-map"> </i> Map</b></h5>
+          <img src="img/GameMap.JPG" style="width:100%">
+        </div>
+        <div class="w3-twothird">
+          <h5><b><i class="fa fa-star"> </i> Top 10</b></h5>
+          <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-collapsed w3-white">
+            <tr> 
+              <td class="col60"> <img class="w3-circle" src="img/Female-Face-FB-3-icon.png" style="width:30px;height:30px"> </td>
+              <td class="col120"><h6>Bea <span class="w3-opacity w3-small">Level 10 XP: +1200</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 90%">90%</div></div>
+            </tr>
+            <tr>
+              <td> <img class="w3-circle" src="img/Female-Face-FD-3-dark-icon.png" style="width:30px;height:30px"> </td>
+              <td><h6>Ojura <span class="w3-opacity w3-small">Level 10 XP: +1150</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 88%">88%</div></div></td>
+            </tr>
+            <tr>
+              <td> <img class="w3-circle" src="img/Male-Face-A2-icon.png" style="width:30px;height:30px"> </td>
+              <td><h6> John <span class="w3-opacity w3-small">Level 10 XP: +1001</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 85%">85%</div></div></td>
+            </tr>
+            <tr> <td> <img class="w3-circle" src="img/Female-Face-FE-5-blonde-icon.png" style="width:30px;height:30px"> </td>
+              <td><h6> Jill <span class="w3-opacity w3-small">Level 8 XP: +851</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 75%">75%</div></div>
+            </tr>
+            <tr> <td> <img class="w3-circle" src="img/Male-Face-H4-icon.png" style="width:30px;height:30px"> </td>
+              <td><h6> James <span class="w3-opacity w3-small">Level 8 XP: +801</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 70%">70%</div></div>
+            </tr>
+            <tr> <td> <img class="w3-circle" src="img/Male-Face-G4-icon.png" style="width:30px;height:30px"> </td>
+              <td><h6> Mike <span class="w3-opacity w3-small">Level 6 XP: +651</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 65%">65%</div></div>
+            </tr>
+            <tr> <td> <img class="w3-circle" src="img/Donna.png" style="width:30px;height:30px"> </td>
+              <td><h6> Donna <span class="w3-opacity w3-small">Level 5 XP: +585</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 60%">60%</div></div>
+            </tr>
+            <tr> <td> <img class="w3-circle" src="img/Male-Face-L3-icon.png" style="width:30px;height:30px"> </td>
+              <td><h6> Ryan <span class="w3-opacity w3-small">Level 5 XP: +551</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 50%">50%</div></div>
+            </tr>
+            <tr> <td> <img class="w3-circle" src="img/Female-Face-FH-4-slim-icon.png" style="width:30px;height:30px"> </td>
+              <td><h6> Lia <span class="w3-opacity w3-small">Level 4 XP: +421</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 42%">42%</div></div>
+            </tr>
+            <tr> <td> <img class="w3-circle" src="img/Male-Face-B5-icon.png" style="width:30px;height:30px"> </td>
+              <td><h6> Joe <span class="w3-opacity w3-small">Level 3 XP: +331</span></h6></td>
+              <td><div id="myProgress" class="progress-bar"><div id="myBar" style="width: 35%">35%</div></div>
+            </tr>
+          </table>
+        </div>
       </div>
     </div>
-  </div>
-  <br>
-  <div class="w3-container w3-dark-grey w3-padding-32">
-    <div class="w3-row">
-      <div class="w3-container w3-third">
-        <h5 class="w3-bottombar w3-border-green">Demographic</h5>
-        <p>Language</p>
-        <p>Country</p>
-        <p>City</p>
+    <hr>
+    <div class="w3-container">
+      <h5>General Stats</h5>
+      <p>New Visitors</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-center w3-padding w3-green" style="width:25%">+25%</div>
       </div>
-      <div class="w3-container w3-third">
-        <h5 class="w3-bottombar w3-border-red">System</h5>
-        <p>Browser</p>
-        <p>OS</p>
-        <p>More</p>
+
+      <p>New Users</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-center w3-padding w3-orange" style="width:50%">50%</div>
       </div>
-      <div class="w3-container w3-third">
-        <h5 class="w3-bottombar w3-border-orange">Target</h5>
-        <p>Users</p>
-        <p>Active</p>
-        <p>Geo</p>
-        <p>Interests</p>
+
+      <p>Bounce Rate</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-center w3-padding w3-red" style="width:75%">75%</div>
       </div>
     </div>
+    <hr>
+
+    <div class="w3-container">
+      <h5>Countries</h5>
+      <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+        <tr>
+          <td>United States</td>
+          <td>65%</td>
+        </tr>
+        <tr>
+          <td>UK</td>
+          <td>15.7%</td>
+        </tr>
+        <tr>
+          <td>Russia</td>
+          <td>5.6%</td>
+        </tr>
+        <tr>
+          <td>Spain</td>
+          <td>2.1%</td>
+        </tr>
+        <tr>
+          <td>India</td>
+          <td>1.9%</td>
+        </tr>
+        <tr>
+          <td>France</td>
+          <td>1.5%</td>
+        </tr>
+      </table><br>
+      <button class="w3-button w3-dark-grey">More Countries  <i class="fa fa-arrow-right"></i></button>
+    </div>
+    <hr>
+    <div class="w3-container">
+      <h5>Recent Users</h5>
+      <ul class="w3-ul w3-card-4 w3-white">
+        <li class="w3-padding-16">
+          <img src="/w3images/avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+          <span class="w3-xlarge">Mike</span><br>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/avatar5.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+          <span class="w3-xlarge">Jill</span><br>
+        </li>
+        <li class="w3-padding-16">
+          <img src="/w3images/avatar6.png" class="w3-left w3-circle w3-margin-right" style="width:35px">
+          <span class="w3-xlarge">Jane</span><br>
+        </li>
+      </ul>
+    </div>
+    <hr>
+
+    <div class="w3-container">
+      <h5>Recent Comments</h5>
+      <div class="w3-row">
+        <div class="w3-col m2 text-center">
+          <img class="w3-circle" src="/w3images/avatar3.png" style="width:96px;height:96px">
+        </div>
+        <div class="w3-col m10 w3-container">
+          <h4>John <span class="w3-opacity w3-medium">Sep 29, 2014, 9:12 PM</span></h4>
+          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+        </div>
+      </div>
+
+      <div class="w3-row">
+        <div class="w3-col m2 text-center">
+          <img class="w3-circle" src="/w3images/avatar1.png" style="width:96px;height:96px">
+        </div>
+        <div class="w3-col m10 w3-container">
+          <h4>Bo <span class="w3-opacity w3-medium">Sep 28, 2014, 10:15 PM</span></h4>
+          <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p><br>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="w3-container w3-dark-grey w3-padding-32">
+      <div class="w3-row">
+        <div class="w3-container w3-third">
+          <h5 class="w3-bottombar w3-border-green">Demographic</h5>
+          <p>Language</p>
+          <p>Country</p>
+          <p>City</p>
+        </div>
+        <div class="w3-container w3-third">
+          <h5 class="w3-bottombar w3-border-red">System</h5>
+          <p>Browser</p>
+          <p>OS</p>
+          <p>More</p>
+        </div>
+        <div class="w3-container w3-third">
+          <h5 class="w3-bottombar w3-border-orange">Target</h5>
+          <p>Users</p>
+          <p>Active</p>
+          <p>Geo</p>
+          <p>Interests</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-16 w3-light-grey">
+      <h4>FOOTER</h4>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+
+    <!-- End page content -->
   </div>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-16 w3-light-grey">
-    <h4>FOOTER</h4>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  </footer>
+  <script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
 
-  <!-- End page content -->
-</div>
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
 
-<script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
         mySidebar.style.display = 'none';
         overlayBg.style.display = "none";
-    } else {
+      } else {
         mySidebar.style.display = 'block';
         overlayBg.style.display = "block";
+      }
     }
-}
 
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-}
-
-</script>
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
+  </script>
 
 </body>
+
 </html>

@@ -16,6 +16,10 @@
 {
 	width: 60px;
 }
+.col120
+{
+	width: 100px;
+}
 .progress-bar
 {
 	width: 70%;
@@ -84,3 +88,4 @@
   line-height: 30px;
   color: #404040;
 }
+
