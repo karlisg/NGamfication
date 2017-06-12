@@ -19,13 +19,13 @@
       }
     }
     window.onload = move;
-
   </script>
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-blue-grey.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -107,48 +107,74 @@
       <h5><b><i class="fa fa-dashboard"></i> My Dashboard</b></h5>
     </header>
 
-    <div class="w3-row-padding w3-margin-bottom">
-      <div class="w3-quarter">
-        <div class="w3-container w3-red w3-padding-16">
-          <div class="w3-left"><i class="fa fa-comment w3-xxxlarge"></i></div>
-          <div class="w3-right">
-            <h3>52</h3>
-          </div>
-          <div class="w3-clear"></div>
-          <h4>Messages</h4>
+    <!--Widgets PS from here-->
+  <div class="w3-row-padding w3-margin-bottom">
+    <div class="w3-quarter">
+      <div class="w3-container w3-red w3-padding-16">
+        <div class="w3-left"><i class="fa fa-line-chart w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>79.96%</h3>
         </div>
-      </div>
-      <div class="w3-quarter">
-        <div class="w3-container w3-blue w3-padding-16">
-          <div class="w3-left"><i class="fa fa-eye w3-xxxlarge"></i></div>
-          <div class="w3-right">
-            <h3>99</h3>
-          </div>
-          <div class="w3-clear"></div>
-          <h4>Views</h4>
-        </div>
-      </div>
-      <div class="w3-quarter">
-        <div class="w3-container w3-teal w3-padding-16">
-          <div class="w3-left"><i class="fa fa-share-alt w3-xxxlarge"></i></div>
-          <div class="w3-right">
-            <h3>23</h3>
-          </div>
-          <div class="w3-clear"></div>
-          <h4>Shares</h4>
-        </div>
-      </div>
-      <div class="w3-quarter">
-        <div class="w3-container w3-orange w3-text-white w3-padding-16">
-          <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
-          <div class="w3-right">
-            <h3>50</h3>
-          </div>
-          <div class="w3-clear"></div>
-          <h4>Users</h4>
+        <div class="w3-clear"></div>
+        <h4>Service Level</h4>
+        <div class="card-image">
+          <a href="https://datastudio.google.com/org//reporting/0Bw4TN00PGJS5alREV1owVEtHZWM/page/6VYF"  target="_blank">
+            <img src="img/Button-Add-icon.png" height="33" width="33">
+            <span class="card-title">View Details</span>
+          </a>
         </div>
       </div>
     </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-indigo w3-padding-16">
+        <div class="w3-left"><i class="fa fa-phone w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>00:00:14</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Avg Speed of Answer</h4>
+        <div class="card-image">
+          <a href="https://datastudio.google.com/org//reporting/0Bw4TN00PGJS5alREV1owVEtHZWM/page/6VYF"  target="_blank">
+            <img src="img/Button-Add-icon.png" height="33" width="33">
+            <span class="card-title">View Details</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-orange w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-pencil-square w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>01:13:39</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>ACW Time</h4>
+        <div class="card-image">
+          <a href="https://datastudio.google.com/org//reporting/0Bw4TN00PGJS5alREV1owVEtHZWM/page/6VYF"  target="_blank">
+            <img src="img/Button-Add-icon.png" height="33" width="33">
+            <span class="card-title">View Details</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="w3-quarter">
+      <div class="w3-container w3-lime w3-text-white w3-padding-16">
+        <div class="w3-left"><i class="fa fa-user-circle w3-xxxlarge"></i></div>
+        <div class="w3-right">
+          <h3>03:39:59</h3>
+        </div>
+        <div class="w3-clear"></div>
+        <h4>Login Time</h4>
+        <div class="card-image">
+          <a href="https://datastudio.google.com/org//reporting/0Bw4TN00PGJS5alREV1owVEtHZWM/page/6VYF"  target="_blank">
+            <img src="img/Button-Add-icon.png" height="33" width="33">
+            <span class="card-title">View Details</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--Widgets PS to here-->
 
     <div class="w3-panel">
       <!--Tabs for displaying-->
@@ -164,95 +190,220 @@
           </ul>
         </div>
         <div id="new" class="col s12">
+          <br>
 
+          <!-- Interests -->
+          <div class="w3-card-2 w3-round w3-white w3-hide-small">
+            <div class="w3-container">
+              <p>Interests</p>
+              <p>
+                <span class="w3-tag w3-small w3-theme-d3">News</span>
+                <span class="w3-tag w3-small w3-theme-d2">Tech</span>
+                <span class="w3-tag w3-small w3-theme-d1">Calls</span>
+                <span class="w3-tag w3-small w3-theme">Language</span>
+                <span class="w3-tag w3-small w3-theme-l1">Spanish</span>
+                <span class="w3-tag w3-small w3-theme-l2">French</span>
+                <span class="w3-tag w3-small w3-theme-l3">Outbound</span>
+                <span class="w3-tag w3-small w3-theme-l4">Extra Points</span>
+                <span class="w3-tag w3-small w3-theme-l5">Photos</span>
+              </p>
+            </div>
+          </div>
+          <br>
+          <div class="w3-row-padding w3-margin-bottom">
+            <div class="w3-quarter">
+              <div class="w3-container w3-green w3-padding-16">
+                <div class="w3-left"><i class="fa fa-user w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                  <h5>50 min</h5>
+                </div>
+                <div class="w3-clear"></div>
+                <h6>Contact Center Basics</h6>
+                <div class="w3-right"><i class="fa fa-play w3-text-white w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                  <i class="fa fa-remove w3-text-red w3-large"></i></div>
+              </div>
+            </div>
+            <div class="w3-quarter">
+              <div class="w3-container w3-purple w3-padding-16">
+                <div class="w3-left"><i class="fa fa-microphone w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                  <h5>30 min</h5>
+                </div>
+                <div class="w3-clear"></div>
+                <h6>Vocal Victories</h6>
+                <div class="w3-right"><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-white w3-large">   </i>                  <i class="fa fa-remove w3-text-red w3-large"></i></div>
+              </div>
+            </div>
+            <div class="w3-quarter">
+              <div class="w3-container w3-pink w3-padding-16">
+                <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                  <h5>30 min</h5>
+                </div>
+                <div class="w3-clear"></div>
+                <h6>Workforce Management</h6>
+                <div class="w3-right"><i class="fa fa-play w3-text-white w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                  <i class="fa fa-remove w3-text-red w3-large"></i></div>
+              </div>
+            </div>
+            <div class="w3-quarter">
+              <div class="w3-container w3-yellow w3-padding-16">
+                <div class="w3-left"><i class="fa fa-users w3-xxxlarge"></i></div>
+                <div class="w3-right">
+                  <h5>30 min</h5>
+                </div>
+                <div class="w3-clear"></div>
+                <h6>Learning Spanish - Part 2</h6>
+                <div class="w3-right"><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                  <i class="fa fa-remove w3-text-red w3-large"></i></div>
+              </div>
+            </div>
+          </div>
         </div>
         <div id="general" class="col s12">
-          <table class="w3-table w3-striped w3-white">
+          <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+            <tr>
+              <td> <span class="header-table"></span> </td>
+              <td> <span class="header-table">Training Course</span> </td>
+              <td> <span class="header-table">Time</span> </td>
+              <td> <span class="header-table">Last Review</span> </td>
+              <td> <span class="header-table">Action</span></td>
+            </tr>
             <tr>
               <td><i class="fa fa-user w3-text-blue w3-large"></i></td>
-              <td>New record, over 90 views.</td>
+              <td>Contact Center Basics</td>
               <td><i>10 mins</i></td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                <i class="fa fa-remove w3-text-red w3-large"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-microphone w3-text-black w3-large"></i></td>
+              <td>Vocal Victories</td>
+              <td><i>15 mins</i></td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                <i class="fa fa-remove w3-text-red w3-large"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-users w3-text-green w3-large"></i></td>
+              <td>Workforce Management</td>
+              <td><i>17 mins</i></td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                <i class="fa fa-remove w3-text-red w3-large"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-comment w3-text-black w3-large"></i></td>
+              <td>Qality Assurance</td>
+              <td><i>25 mins</i></td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                <i class="fa fa-remove w3-text-red w3-large"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-wechat w3-text-blue w3-large"></i></td>
+              <td>Digital Customer Service.</td>
+              <td><i>28 mins</i></td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                <i class="fa fa-remove w3-text-red w3-large"></i></td>
+            </tr>
+
+            <tr>
+              <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+              <td>New Procedures</td>
+              <td>45 min</td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">    </i>                </td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-laptop w3-text-black w3-large"></i></td>
+              <td>Successful Sales</td>
+              <td><i>35 mins</i></td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                <i class="fa fa-remove w3-text-red w3-large"></i></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-share-alt w3-text-blue w3-large"></i></td>
+              <td>Supervision</td>
+              <td><i>39 mins</i></td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">   </i>                <i class="fa fa-remove w3-text-red w3-large"></i></td>
             </tr>
             <tr>
               <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
-              <td>Database error.</td>
-              <td><i>15 mins</i></td>
-            </tr>
-            <tr>
-              <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
-              <td>New record, over 40 users.</td>
-              <td><i>17 mins</i></td>
-            </tr>
-            <tr>
-              <td><i class="fa fa-comment w3-text-red w3-large"></i></td>
-              <td>New comments.</td>
-              <td><i>25 mins</i></td>
-            </tr>
-            <tr>
-              <td><i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
-              <td>Check transactions.</td>
-              <td><i>28 mins</i></td>
-            </tr>
-            <tr>
-              <td><i class="fa fa-laptop w3-text-red w3-large"></i></td>
-              <td>CPU overload.</td>
-              <td><i>35 mins</i></td>
-            </tr>
-            <tr>
-              <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
-              <td>New shares.</td>
-              <td><i>39 mins</i></td>
+              <td>Security Training</td>
+              <td>50 min</td>
+              <td>06/07/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large">  </i>                </td>
             </tr>
           </table>
         </div>
-        <div id="mandatory" class="col s12">Outbox (Disabled)</div>
+        <div id="mandatory" class="col s12">
+          <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
+            <tr>
+              <td> <span class="header-table"></span> </td>
+              <td> <span class="header-table">Training Course</span> </td>
+              <td> <span class="header-table">Time</span> </td>
+              <td> <span class="header-table">Last Review</span> </td>
+              <td> <span class="header-table">Action</span></td>
+            </tr>
+            <tr>
+              <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+              <td>Security Training</td>
+              <td>50 min</td>
+              <td>06/07/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
+
+            </tr>
+            <tr>
+              <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
+              <td>New Procedures</td>
+              <td>45 min</td>
+              <td>05/27/2017</td>
+              <td><i class="fa fa-play w3-text-green w3-large">  </i> <i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
+            </tr>
+          </table>
+        </div>
         <div id="history" class="col s12">
           <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-white">
             <tr>
-              <td>
-                <h5>Training Course </h5>
-              </td>
-              <td>
-                <h5>% Complete</h5>
-              </td>
-              <td>
-                <h5>Status</h5>
-              </td>
-              <td>
-                <h5>Last Review</h5>
-              </td>
+              <td><span class="header-table"></span> </td>
+              <td> <span class="header-table">Training Course </span> </td>
+              <td> <span class="header-table">% Complete</span> </td>
+              <td> <span class="header-table">Status</span> </td>
+              <td> <span class="header-table">Last Review</span> </td>
             </tr>
             <tr>
+              <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
               <td>Onboarding</td>
               <td>100%</td>
               <td>Completed</td>
               <td>05/27/2017</td>
             </tr>
             <tr>
+              <td><i class="fa fa-share-alt w3-text-green w3-large"></i></td>
               <td>IB calls</td>
               <td>85.7%</td>
               <td>In Progress </td>
               <td>06/07/2017</td>
             </tr>
             <tr>
+              <td><i class="fa fa-users w3-text-yellow w3-large"></i></td>
               <td>Get ready for Mailing</td>
               <td>0%</td>
               <td>New </td>
               <td>06/07/2017</td>
             </tr>
             <tr>
+              <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
               <td>Security Training</td>
               <td>2.1%</td>
               <td>In Progress </td>
               <td>06/07/2017</td>
             </tr>
             <tr>
+              <td><i class="fa fa-bell w3-text-red w3-large"></i></td>
               <td>New Procedures</td>
               <td>80.9%</td>
               <td>In Progress </td>
               <td>06/07/2017</td>
             </tr>
             <tr>
+              <td><i class="fa fa-bookmark w3-text-blue w3-large"></i></td>
               <td>Learning Spanish - Part 1</td>
               <td>1.5%</td>
               <td>In Progress </td>
@@ -274,28 +425,28 @@
   </div>
 
   <script>
-        // Get the Sidebar
-        var mySidebar = document.getElementById("mySidebar");
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
 
-        // Get the DIV with overlay effect
-        var overlayBg = document.getElementById("myOverlay");
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
 
-        // Toggle between showing and hiding the sidebar, and add overlay effect
-        function w3_open() {
-          if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-            overlayBg.style.display = "none";
-          } else {
-            mySidebar.style.display = 'block';
-            overlayBg.style.display = "block";
-          }
-        }
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+      } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+      }
+    }
 
-        // Close the sidebar with the close button
-        function w3_close() {
-          mySidebar.style.display = "none";
-          overlayBg.style.display = "none";
-        }
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+      overlayBg.style.display = "none";
+    }
   </script>
 
 </body>
