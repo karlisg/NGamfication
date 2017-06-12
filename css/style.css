@@ -12,7 +12,10 @@
 .icon-block .material-icons {
 	font-size: inherit;
 }
-
+.col60
+{
+	width: 60px;
+}
 .progress-bar
 {
 	width: 70%;
@@ -44,17 +47,28 @@
 
 .level-detail
 {
-	padding-left: 190px;
+	padding-left: 175px;
 	font-size: 14px;
 	color: #800080;
 	font-weight: bold;
 }
+
+.description
+{
+	padding-right: 10px;
+	font-size: 10px;
+	color:#A9A9A9;
+}
+
 .header-table
 {
 	padding-left: 27px;
 	font-size: 14px;
 	color: #800080;
 	font-weight: bold;
+}
+.settings {
+  padding-left: 150px;
 }
 
 #myProgress {
@@ -70,8 +84,3 @@
   line-height: 30px;
   color: #404040;
 }
-
-.settings {
-  padding-left: 150px;
-}
-
