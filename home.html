@@ -30,7 +30,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- 2 KS Aumentar esto -->
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
-  <style>
+
+  <style type="text/css">
     html,
     body,
     h1,
@@ -40,7 +41,18 @@
     h5 {
       font-family: "Raleway", sans-serif
     }
+
+#boton {
+        float: left;
+        position: absolute;
+        margin-left: 0cm;
+        margin-top: 0cm;
+        }
+#imgs{float: left;}  
+
+
   </style>
+
 
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
@@ -58,7 +70,7 @@
     <span class="w3-bar-item w3-right">Logo</span>
   </div>
 
-  <!-- 3 KS Reamplazar esto aqui -->
+   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
     <div class="w3-container w3-row">
       <div class="w3-card-2 w3-round w3-white">
@@ -81,10 +93,10 @@
         </div>
         <div class="w3-bar-block">
           <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hide-large w3-dark-grey w3-hover-black" onclick="w3_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
-          <a href="home.html" class="w3-bar-item w3-button w3-padding  w3-blue"><i class="fa fa-home fa-fw"></i>  Home</a>
+          <a href="home.html" class="w3-bar-item w3-button w3-padding" w3-blue><i class="fa fa-home fa-fw"></i>  Home</a>
           <!-- 4 KS w3-blue REMOVER Y COLOCAR EN LA PAGINA SELECIONADA  -->
           <a href="performance.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-bar-chart fa-fw"></i>  Performance</a>
-          <a href="learning.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw"></i>  Learning</a>
+          <a href="learning.html" class="w3-bar-item w3-button w3-padding  "><i class="fa fa-book fa-fw"></i>  Learning</a>
           <a href="agent-rewards.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-diamond fa-fw"></i>  Rewards</a>
           <a href="social.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-thumbs-o-up fa-fw"></i>  Social</a>
           <a href="settings.html" class="w3-bar-item w3-button w3-padding"><i class="fa fa-cog fa-fw"></i>  Settings</a><br>
@@ -165,7 +177,7 @@
         <h4>Login Time</h4>
         <div class="card-image">
           <a href="https://datastudio.google.com/org//reporting/0Bw4TN00PGJS5alREV1owVEtHZWM/page/6VYF"  target="_blank">
-            <img src="img/Button-Add-icon.png" height="33" width="33">
+            <img src="img/Button-Add-icon.png" height="33" width="33" >
             <span class="card-title">View Details</span>
           </a>
         </div>
@@ -180,11 +192,21 @@
       <div class="w3-row-padding" style="margin:0 -16px">
         <div class="w3-third" >
           <h5><b><i class="fa fa-map"> </i> Map</b></h5>
-          <img src="img/GameMapLevelPeopleEnd.JPG" style="width:100%">
+
+          <img  src="img/GameMapLevelPeopleEnd.JPG" style="width:100%">        
+  <a href="https://www.surveymonkey.com/r/PGDDQ62" id="imgs" style="background-image=url(images/YouWin.jpg);"> 
+ 
+<div style="background-image=url(images/YouWin.jpg);">
+    <input id = imgs type=button value="YouWin"/>
+     </a>
+</div>
+
+         
         </div>
         <div class="w3-twothird">
           <h5><b><i class="fa fa-star"> </i> Top 10</b></h5>
      <table class="w3-table w3-striped w3-bordered w3-border w3-hoverable w3-collapsed w3-white">
+
             <tr> 
               <td class="col60"> <img class="w3-circle" src="img/Female-Face-FB-3-icon.png" style="width:30px;height:30px"> </td>
               <td class="col120"><h6>Bea <span class="w3-opacity w3-small">Level 8 XP: +820</span></h6></td>
